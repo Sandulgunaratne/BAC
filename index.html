@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bank Login</title>
+  <style>
+    body { font-family: Arial; background: #f0f0f0; padding: 50px; }
+    .container {
+      background: white; padding: 20px; width: 300px; margin: auto;
+      border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    input { width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
+    input[type="submit"] { background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    h2 { text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Bank Portal Login</h2>
+    <form action="profile.php" method="GET">
+      <label>Username:</label>
+      <input type="text" name="user" required>
+
+      <label>Password:</label>
+      <input type="password" name="pass" required>
+
+      <!-- You can add login logic in PHP, for now we hardcode to ID 1 -->
+      <input type="hidden" name="id" value="1">
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+</body>
+</html>
